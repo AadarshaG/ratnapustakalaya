@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  max-width: 1920px;
+  margin: auto;
+  overflow-x: hidden;
+}
+body img {
+  width: 100%;
+  height: 100%;
+}
+body img.object-contain {
+  object-fit: contain;
+}
+body img.object-cover {
+  object-fit: cover;
+}
+body a {
+  text-decoration: none;
+}
+body article a:hover {
+  text-decoration: underline !important;
+}
+body iframe {
+  width: 100%;
+}
+
+.ff-playfair {
+  font-family: "Playfair Display SC", serif;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+.font-28 {
+  font-size: 28px;
+}
+.font-36 {
+  font-size: 36px;
+}
+.font-w-400 {
+  font-weight: 400;
+}
+.font-w-500 {
+  font-weight: 500;
+}
+.font-w-700 {
+  font-weight: 700;
+}
+
+.size-30 {
+  width: 25px;
+  height: 25px;
+}
+.size-75 {
+  width: 75px;
+  height: 75px;
+}
+.size-100 {
+  width: 100px;
+  height: 100px;
+}
+
+.ratna-underline {
+  position: relative;
+}
+.ratna-underline::after {
+  transition: 0.5s;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+}
+.ratna-underline:hover::after {
+  width: 100%;
+}
+.ratna-underline.active::after {
+  width: 100%;
+}
+.ratna-two-line {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+.ratna-h-150 {
+  height: 150px;
+}
+.ratna-h-600 {
+  height: 500px;
+}
+.ratna-bg-red {
+  background-color: #EB102F;
+}
+.ratna-bg-light {
+  background-color: #e5e5e5;
+}
+
+.header-btn{
+  background-color: #EB102F;
+  color: white;
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+.header-btn:hover{
+  background-color: white;
+  color: #EB102F;
+  border: 1px solid #EB102F;
+  transition: 0.5s;
+}
+
+.about{
+  background-color: #EB102F;
+  color: #e5e5e5;
+  border: 2px solid #e5e5e5;
+  border-radius: 50px;
+  padding: 5px 20px;
+}
+
+#contact{
+  margin-top: 150px;
+}
+
+#about{
+  margin-top: 150px;
+}
+#membership{
+  margin-top: 150px;
+
+}
+#events{
+  margin-top: 150px;
+}
+
+.about:hover{
+  background-color: #e5e5e5;
+  color: #EB102F;
+  border: 1px solid #EB102F;
+  transition: 0.5s;
+}
+
+#slider{
+  display: flex;
+}
+
+#carousel_slider{
+  margin: 165px 5px 0px 5px;
+  height: 150px !important;
+}
+#carousel_side_img{
+ height: 500px;
+ margin-top:165px;
+}
+
+
+#donate{
+   display: flex;
+   justify-content: space-evenly;
+}
+
+  #donate_btn{
+    position: absolute;
+    margin-top: 37px;
+    right: 150px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: #EB102F;
+    color: white;
+    padding: 3px 15px;
+   
+  }
+
+ #donate_btn:hover{
+    background-color: white;
+    color: #EB102F;
+    border: 1px solid #EB102F;
+    transition: 0.5s;
+  }
+
+  /* gallery page */
+
+  .gallery{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+
+  .gallery_img{
+    height:350px;
+    width:350px;
+    padding:25px;
+    object-fit: cover;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+  }
+
+
+  .gallery_img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+  } 
+  #gallery{
+    margin-top: 150px;
+  }
+  #event_single{
+    margin-top: 150px;
+  }
+
+  /* committee page */
+  #committe_main{
+    margin-top: 155px;
+  }
+
+  .committe{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+
+  .committe_img{
+    height:350px;
+    width:350px;
+    padding:25px;
+    object-fit: cover;
+    transition: all .2s ease-in-out;
+    border-radius: 30px;
+  }
+  .committe_img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+  } 
+
+  .committee_info{
+    background-color: aliceblue;
+    padding: 10px 1px 10px 0px;
+
+  }
+
+ .committe_name{
+ background-color: #EB102F;
+ padding: 5px 130px 5px 120px;
+ color: #fff;
+ border-radius: 10px;
+ }
+
+ .committe_position{
+  background-color: #EB102F;
+  padding: 5px 119px 5px 118px;
+  color: #fff;
+  border-radius: 10px;
+  }
+ 
+
+  #committe_member{
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+
+ .committee_info p{
+   padding-top: 1px;
+ }
+ .committe_links ul{
+   list-style-type: none;
+   display: flex;
+   padding-left: 8rem;
+   margin-top: 4rem;
+ }
+
+ .committe_links ul li{
+  padding: 10px 80px 0px 0px;
+
+  
+}
+
+.committe_links ul li a{
+  color: black;
+  padding: 5px 30px 5px 30px;
+  border-radius: 10px;
+  
+}
+
+.committe_links ul li :hover {
+  /* border: 2px solid white; */
+  background-color: red;
+  color: white;
+  transition: 0.3s ease;
+  
+
+}
+
+#committer{
+  margin-top: -px;
+
+}
+
+ /* navbar */
+
+  .nav_header{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    z-index: 1;
+  }
+/* payment  */
+
+.main{
+  margin-top: 50px;
+  height: 50px;
+  width:445px;
+  text-align: justify;
+  margin-left: 8rem;
+  margin-top: 3rem;
+  /* margin-top: 5rem; */
+  /* display:flex;
+  
+  justify-content: space-evenly; */
+}
+
+.mains{
+  margin-top: 120px;
+  height: 50px;
+  width:445px;
+  text-align: justify;
+  margin-left: 8rem;
+}
+
+#khalti_logo{
+  height:95px;
+  width:95px;
+  object-fit: contain;
+  position: absolute;
+  left:27rem;
+  top:17.2rem;
+}
+
+#esewa_logo{
+  height:95px;
+  width:95px;
+  object-fit: contain;
+  position: absolute;
+  left:27rem;
+  top:28.3rem;
+}
+  
+.account_info{
+ display: block;
+ background-color: aqua;
+ padding:15px 20px 10px 20px;
+ border-radius: 10px;
+}
+h5{
+  font-size:20px;
+}
+
+.qr_code{
+  /* margin-top:4rem; */
+}
+
+#scan{
+  font-size:30px;
+  padding-bottom: 10px;
+  position: absolute;
+  z-index: 0;
+  top: 16rem;
+  right: 16rem;
+}
+
+#qr{
+  height:300px;
+  width:300px;
+  margin: -200px 0px 50px 840px;
+
+
+}
+
+
+  
+
+
+ 
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+  .font-36 {
+    font-size: 24px;
+  }
+}
+
+/* carousel -------------------------------------------------- */
+.carousel-item{
+  height: 400px;
+}
+
